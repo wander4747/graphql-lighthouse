@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  graphql-php:
+    build:
+      dockerfile: .docker/php/Dockerfile
+      context: .
+      args:
+        PHP_VERSION: '8.2.4-fpm-bullseye'
+    volumes:
+      - ./laravel:/var/www/laravel
+      - ./.docker/php/config:/usr/local/etc/php/conf.d/
+    networks:
+      - graphql-network
+    ports:
+      - "9000:9000"
+      - "5173:5173"
+
+  graphql-nginx:
+    build: .docker/nginx
+    container_name: nginx
+    restart: always
+    tty: true
+    ports:
+      - "1234:80"
+    volumes:
+      - ./laravel:/var/www/laravel
+    networks:
+      - graphql-network
+    depends_on:
+      - graphql-php
+
+
+networks:
+  graphql-network:
+    driver: bridge
