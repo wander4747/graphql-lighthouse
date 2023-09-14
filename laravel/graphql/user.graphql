@@ -1,0 +1,35 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+extend type Query {
+  userById(id: ID! @eq): User @find
+  users: [User!]! @all
+  usersPaginated: [User!]! @paginate
+}
+
+extend type Mutation {
+  createUser(
+    name: String!, 
+    email: String!,
+    password: String!
+  ) : User! @create
+
+  updateUser(
+    id: ID!, 
+    name: String,
+    password: String,
+    email: String
+  ): User @update
+
+  upsertUser(
+    id: ID, 
+    name: String,
+    password: String,
+    email: String
+  ): User @upsert
+
+  userDelete(id: ID! @whereKey): User @delete
+}
