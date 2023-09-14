@@ -4,10 +4,20 @@ type User {
   email: String!
 }
 
+type Post {
+  id: ID!
+  user_id: ID!
+  title: String!
+  content: String!
+}
+
 type Query {
   userById(id: ID! @eq): User @find
   users: [User!]! @all
   usersPaginated: [User!]! @paginate
+  post: [Post!]! @all
+  postById(id: ID! @eq): Post @find
+  postPaginated: [Post!]! @paginate
 } 
 
 type Mutation {
@@ -29,7 +39,22 @@ type Mutation {
     email: String
   ): User @upsert
   userDelete(id: ID! @whereKey): User @delete
+  createPost(
+    user_id: ID!
+    title: String!
+    content: String!
+  ): Post! @create,
+  updatePost(
+    id: ID!
+    user_id: ID
+    title: String
+    content: String
+  ): Post @update,
+  upsertPost(
+    id: ID,
+    user_id: ID,
+    title: String,
+    content: String
+  ): Post @upsert,
+  postDelete(id: ID! @whereKey): Post @delete
 }
-
-
-

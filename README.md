@@ -37,11 +37,11 @@ $ docker-composer up -d
     - [ ] Listar posts
 
 - [ ] Posts
-    - [ ] Criar
-    - [ ] Editar
-    - [ ] Listar todos
-    - [ ] Listar usuario específico
-    - [ ] Deletar
+    - [X] Criar
+    - [X] Editar
+    - [X] Listar todos
+    - [X] Listar post específico
+    - [X] Deletar
     - [ ] Listar usuário
 
 ---
