@@ -62,6 +62,16 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ---
 
+### 🛠️ Contribuidores
+- [AlexanderChiudini](https://github.com/AlexanderChiudini)
+- [Hyago Goularte](https://github.com/hyagogoularte)
+- [João Paulo Melo dos Santos](https://github.com/joaopaulomelo)
+- [Kerecki](https://github.com/Kerecki)
+- [Lindsay](https://github.com/lindsayct)
+- [Paulo Henrique Amigoni](https://github.com/pauloamigoni)
+
+---
+
 Feito com muito ❤️☕👨🏻‍💻  por Wander Douglas  
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wander-douglas/)](https://www.linkedin.com/in/wander-douglas/)
 [![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5531993326096&text=Hello!)](https://api.whatsapp.com/send?phone=5531993326096&text=Hello!)
