@@ -3,6 +3,7 @@ type Post {
   user_id: ID!
   title: String!
   content: String!
+  user: User!
 }
 
 extend type Query {

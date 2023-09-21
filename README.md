@@ -28,21 +28,21 @@ $ docker-composer up -d
 
 ### Features
 
-- [ ] Usuários
+- [X] Usuários
     - [X] Criar
     - [X] Editar
     - [X] Listar todos
     - [X] Listar usuario específico
     - [X] Deletar
-    - [ ] Listar posts
+    - [X] Listar posts
 
-- [ ] Posts
+- [X] Posts
     - [X] Criar
     - [X] Editar
     - [X] Listar todos
     - [X] Listar post específico
     - [X] Deletar
-    - [ ] Listar usuário
+    - [X] Listar usuário
 
 ---
 
